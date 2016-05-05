@@ -18,4 +18,6 @@ Into Zero there are:
 If you find some thing I missed, please let me know.
 
 Good work to everybody.
+
+Alessio.
  
