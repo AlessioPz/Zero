@@ -39,10 +39,10 @@ public class ZeroDbHelper extends SQLiteOpenHelper {
     }
 
     private final static String SQL_CREATE_ZERO_ENTITY =
-            "CREATE TABLE " + ZeroContract.MessageEntry.TABLE_NAME + " (" +
-                    ZeroContract.MessageEntry._ID + INTEGER_TYPE + " PRIMARY KEY " + COMMA_SEP +
-                    ZeroContract.MessageEntry._COUNT + INTEGER_TYPE + COMMA_SEP +
-                    ZeroContract.MessageEntry.COLUMN_NAME_STRING_FIELD + TEXT_TYPE  + COMMA_SEP +
-                    ZeroContract.MessageEntry.COLUMN_NAME_BOOLEAN_FIELD + INTEGER_TYPE + DEFAULT_0 + COMMA_SEP +
+            "CREATE TABLE " + ZeroContract.ZeroEntityEntry.TABLE_NAME + " (" +
+                    ZeroContract.ZeroEntityEntry._ID + INTEGER_TYPE + " PRIMARY KEY " + COMMA_SEP +
+                    ZeroContract.ZeroEntityEntry._COUNT + INTEGER_TYPE + COMMA_SEP +
+                    ZeroContract.ZeroEntityEntry.COLUMN_NAME_STRING_FIELD + TEXT_TYPE  + COMMA_SEP +
+                    ZeroContract.ZeroEntityEntry.COLUMN_NAME_BOOLEAN_FIELD + INTEGER_TYPE + DEFAULT_0 + COMMA_SEP +
                     ") ";
 }

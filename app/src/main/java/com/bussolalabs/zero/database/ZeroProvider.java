@@ -41,7 +41,7 @@ public class ZeroProvider extends ContentProvider {
             case ZERO_ENTITY:
             {
                 retCursor = mOpenHelper.getReadableDatabase().query(
-                        ZeroContract.MessageEntry.TABLE_NAME, projection, selection, selectionArgs,
+                        ZeroContract.ZeroEntityEntry.TABLE_NAME, projection, selection, selectionArgs,
                         null, null, sortOrder);
                 break;
             }
@@ -59,7 +59,7 @@ public class ZeroProvider extends ContentProvider {
 
         switch (match) {
             case ZERO_ENTITY:
-                return ZeroContract.MessageEntry.CONTENT_DIR_TYPE;
+                return ZeroContract.ZeroEntityEntry.CONTENT_DIR_TYPE;
             default:
                 throw new UnsupportedOperationException("Unknown URI:" + uri);
         }
@@ -74,8 +74,8 @@ public class ZeroProvider extends ContentProvider {
 
         switch (match) {
             case ZERO_ENTITY: {
-                long _id = db.insert(ZeroContract.MessageEntry.TABLE_NAME, null, values);
-                if (_id > 0) returnUri = ZeroContract.MessageEntry.buildUri(_id);
+                long _id = db.insert(ZeroContract.ZeroEntityEntry.TABLE_NAME, null, values);
+                if (_id > 0) returnUri = ZeroContract.ZeroEntityEntry.buildUri(_id);
                 else throw new android.database.SQLException("Failed to insert row into " + uri);
                 break;
             }
@@ -96,7 +96,7 @@ public class ZeroProvider extends ContentProvider {
         if (null == selection) selection = "1";
         switch (match) {
             case ZERO_ENTITY:
-                rowsDeleted = db.delete(ZeroContract.MessageEntry.TABLE_NAME, selection, selectionArgs);
+                rowsDeleted = db.delete(ZeroContract.ZeroEntityEntry.TABLE_NAME, selection, selectionArgs);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
@@ -115,7 +115,7 @@ public class ZeroProvider extends ContentProvider {
 
         switch (match) {
             case ZERO_ENTITY:
-                rowsUpdated = db.update(ZeroContract.MessageEntry.TABLE_NAME, values, selection, selectionArgs);
+                rowsUpdated = db.update(ZeroContract.ZeroEntityEntry.TABLE_NAME, values, selection, selectionArgs);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);

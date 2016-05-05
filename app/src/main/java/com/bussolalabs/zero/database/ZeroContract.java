@@ -16,7 +16,7 @@ public class ZeroContract {
 
     public static final String PATH_ZERO_ENTITY = "zero_entity";
 
-    public static abstract class MessageEntry implements BaseColumns {
+    public static abstract class ZeroEntityEntry implements BaseColumns {
 
         public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(PATH_ZERO_ENTITY).build();
 
