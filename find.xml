@@ -1,10 +1,10 @@
 <application>
   <component name="FindSettings">
     <option name="caseSensitive" value="true" />
-    <option name="customScope" value="Project 'Agenda QR'" />
-    <option name="defaultScopeName" value="Project 'Agenda QR'" />
+    <option name="customScope" value="Project 'RealQuest'" />
+    <option name="defaultScopeName" value="Project 'RealQuest'" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="SEARCH_SCOPE" value="Project 'Agenda QR'" />
+    <option name="SEARCH_SCOPE" value="Project 'RealQuest'" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>
